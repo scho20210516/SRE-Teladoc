@@ -102,7 +102,20 @@ Starting to serve on 127.0.0.1:8001
 Extra Credit
 
 Host your Kubernetes cluster in AWS
-#SCHO Used the repository SRE-AWS to build the Kubernetes cluster in my own AWS account,381775446117, using the Cloudformation template,
+#SCHO Used the repository SRE-AWS to build the Kubernetes cluster in my own AWS account,381775446117, using the Cloudformation template
+
+
+
+
+
+
+
+
+
+
+
+
+<img width="1622" alt="Screen Shot 2021-05-18 at 10 56 04 PM" src="https://user-images.githubusercontent.com/84278162/118750328-30669380-b82d-11eb-8e57-c80b8d625d5e.png">
 
 
 
@@ -735,6 +748,12 @@ Deploy your infrastructure with Terraform
 
 
 Install a Kubernetes Dashboard
+#SCHO - Use below instruction 
+
+https://docs.aws.amazon.com/eks/latest/userguide/dashboard-tutorial.html
+
+
+
 
 
 
