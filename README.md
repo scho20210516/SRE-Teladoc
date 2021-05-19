@@ -112,11 +112,9 @@ docker-compose build
 % docker image ls | grep dockersample
 dockersamples/k8s-wordsmith-web      latest                                                  c1858c040bb0   2 years ago     11.1MB
 dockersamples/k8s-wordsmith-db       latest                                                  1ec1b68f9d19   3 years ago     38.2MB
-dockersamples/k8s-wordsmith-api      latest                                                  77b84213c1f6   3 years ago     87.5MB
+dockersamples/k8s-wordsmith-api(demo)      latest                                            77b84213c1f6   3 years ago     87.5MB
 
-
-
-
+All three images are in https://hub.docker.com/repository/docker/scho20210516/sre-teladoc
 
 Deploy your application with Helm
 Deploy your infrastructure with Terraform
