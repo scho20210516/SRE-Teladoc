@@ -764,7 +764,36 @@ Install APM in your application (monitoring)
 
 Double Extra Credit
 Enable us to load your application in our browser
+
+
+When you create a Kubernetes Ingress, an AWS Application Load Balancer is provisioned that load balances application traffic. To learn more, see What is an Application Load Balancer? in the Application Load Balancers User Guide and Ingress in the Kubernetes documentation. ALBs can be used with pods deployed to nodes or to AWS Fargate. You can deploy an ALB to public or private subnets.
+
+Application traffic is balanced at L7 of the OSI model. To load balance network traffic at L4, you deploy a Kubernetes Service of type LoadBalancer, which provisions an AWS Network Load Balancer. For more information, see Network load balancing on Amazon EKS. To learn more about the differences between the two types of load balancing, see Elastic Load Balancing features on the AWS website.
+
+
+
+
 Enable us to view pod CPU and RAM usage in New Relic
+I created a free New Relic account and started integration with the Kubernetes but its taking more than usual. I have experience with the Datadog integration with Kubernetes, AWS, Cloudflare, Okta, Github, Snowflake and etc - so this is matter of getting the NewRelic support and research more on my side
+
+
+
+
+
+
+
+<img width="1619" alt="Screen Shot 2021-05-18 at 11 10 50 PM" src="https://user-images.githubusercontent.com/84278162/118751139-ce0e9280-b82e-11eb-8461-721bc33b9433.png">
+
+
+
+
+
+
+
 CD pipeline that builds and deploys on every commit/push
+
+For kubenetes CD, I highly recommend using https://argoproj.github.io/argo-cd/
+
+I have experience with AWS CodeDeploy but I never used it for the Kubernetes - I used it for the serverless mobile applications. 
 
 
