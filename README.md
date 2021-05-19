@@ -117,6 +117,37 @@ dockersamples/k8s-wordsmith-api(demo)      latest                               
 All three images are in https://hub.docker.com/repository/docker/scho20210516/sre-teladoc
 
 Deploy your application with Helm
+Using the repo, SRE-AWS, instead of installing Kubernetes resources manually via kubectl, one can use Helm to install pre-defined Charts faster, with less chance of typos or other operator errors
+# first, add the default repository, then update
+helm repo add stable https://charts.helm.sh/stable
+helm repo update
+#to list all charts
+helm search repo
+#search for nginx
+helm search repo nginx
+#To add the Bitnami Chart repo to our local list of searchable charts:
+helm repo add bitnami https://charts.bitnami.com/bitnami
+#search all Bitnami Charts
+helm search repo bitnami
+helm search repo bitnami/nginx
+#use Helm to deploy the bitnami/nginx chart
+helm install mywebserver bitnami/nginx
+#review the underlying Kubernetes services, pods and deployments, run:
+kubectl get svc,po,deploy
+#inspect this Deployment object in more detail 
+kubectl describe deployment mywebserver
+#To verify the Pod object was successfully deployed,
+kubectl get pods -l app.kubernetes.io/name=nginx
+#To get the complete URL of this Service, run
+kubectl get service mywebserver-nginx -o wide
+<img width="579" alt="Screen Shot 2021-05-18 at 9 49 18 PM" src="https://user-images.githubusercontent.com/84278162/118744770-ef698180-b822-11eb-9ffb-1916a787ab39.png">
+
+
+
+
+
+
+
 Deploy your infrastructure with Terraform
 Install a Kubernetes Dashboard
 Install APM in your application (monitoring)
