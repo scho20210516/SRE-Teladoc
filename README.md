@@ -140,6 +140,11 @@ kubectl describe deployment mywebserver
 kubectl get pods -l app.kubernetes.io/name=nginx
 #To get the complete URL of this Service, run
 kubectl get service mywebserver-nginx -o wide
+
+
+
+
+
 <img width="579" alt="Screen Shot 2021-05-18 at 9 49 18 PM" src="https://user-images.githubusercontent.com/84278162/118744770-ef698180-b822-11eb-9ffb-1916a787ab39.png">
 
 
