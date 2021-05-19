@@ -100,8 +100,11 @@ Starting to serve on 127.0.0.1:8001
 
 
 Extra Credit
+
 Host your Kubernetes cluster in AWS
 #SCHO Used the repository SRE-AWS to build the Kubernetes cluster in my own AWS account,381775446117, using the Cloudformation template,
+
+
 
 {
   "AWSTemplateFormatVersion": "2010-09-09",
@@ -672,9 +675,8 @@ Host your Kubernetes cluster in AWS
   }
 }
 
-Feedback
-English (US)
-© 2008 - 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.
+
+
 
 Host your Docker image on dockerhub.com
 #SCHO created the dockerhub account, "scho20210516" and linked it with the Github account, "scho20210516"
